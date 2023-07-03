@@ -53,7 +53,7 @@ export const RegisterForm = () => {
             name="name"
             type="text"
             label="Name"
-            placeholder="John Wick"
+            placeholder="Mango"
             variant="outlined"
             fullWidth
             margin="normal"
@@ -67,7 +67,7 @@ export const RegisterForm = () => {
             name="email"
             type="email"
             label="Email"
-            placeholder="johnwick@gmail.com"
+            placeholder="mangomango@gmail.com"
             variant="outlined"
             fullWidth
             margin="normal"
