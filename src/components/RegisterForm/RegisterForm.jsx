@@ -14,7 +14,7 @@ import {
   InputLabel,
   OutlinedInput,
   TextField,
-  Typography,
+  
 } from '@mui/material';
 import { BasicModal } from 'components/BasicModal';
 
@@ -157,25 +157,7 @@ export const RegisterForm = () => {
           </Box>
         </Box>
 
-        <Box
-          component="div"
-          sx={{
-            mt: 2,
-          }}
-        >
-          <Typography
-            variant="h6"
-            component="p"
-            sx={{
-              fontSize: 18,
-              textAlign: 'center',
-              color: 'colors.grey',
-            }}
-          >
-            Already have an account?
-            <Link to="/login">{''} Login.</Link>
-          </Typography>
-        </Box>
+        
       </Box>
     </BasicModal>
   );
