@@ -11,10 +11,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const boxAdd = {
   position: 'absolute',
-  top: 80,
-  right: 0,
+  
+  top: 220,
+ 
+  transform: 'translate(-50%, -50%)',
+  left: 20,
   p: 2,
-  width: 400,
+  width: 300,
   zIndex: 1,
 };
 
@@ -41,7 +44,7 @@ export const AddContact = ({ handleClick }) => {
           })
         : await addContact({ name, number });
 
-      toast.success(`${name} contact has been added to the phonebook.`, {
+      toast.success(`${name} contact added to the phonebook.`, {
         theme: 'colored',
         autoClose: 2000,
       });
@@ -66,7 +69,7 @@ export const AddContact = ({ handleClick }) => {
             name="name"
             type="text"
             label="Name"
-            placeholder="John Wick"
+            placeholder="Name"
             variant="outlined"
             color="accent"
           />
@@ -83,7 +86,7 @@ export const AddContact = ({ handleClick }) => {
 
           <Stack direction="row" justifyContent="center" spacing={5}>
             <SecondaryButton size={'sm'} type={'submit'}>
-              Add
+              GO
             </SecondaryButton>
 
             <SecondaryButton size={'sm'} fn={handleClick}>
